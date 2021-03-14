@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, NavLink } from "react-router-dom";
 const About = lazy(() => import("./About"));
 // import About from "./About";
 const Home = lazy(() => import("./Home")); 
@@ -7,15 +7,9 @@ const Home = lazy(() => import("./Home"));
 const App: React.FC = () => (
   <Router>
     <Suspense fallback={<div>Loading...</div>}>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-        </ul>
+      <nav className='navBar'>
+        <NavLink to="/" className="navItem">Home</NavLink>
+        <NavLink to="/about" className="navItem">About</NavLink>
       </nav>
       <Switch>
         <Route path="/about">

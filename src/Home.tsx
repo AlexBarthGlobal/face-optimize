@@ -1,7 +1,11 @@
 import React from "react";
+import FaceOptimize from './FaceOptimize'
 
 const Home: React.FC = () => (
-  <h1>Welcome to your PWA</h1>
+  <div>
+    <h1 className="welcomeText">Welcome to Face Optimize</h1>
+    <FaceOptimize />
+  </div>
 );
 
 export default Home;
