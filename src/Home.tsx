@@ -1,5 +1,5 @@
 import React from "react";
-import FaceOptimize from './FaceOptimize'
+// import FaceOptimize from './FaceOptimize'
 
 const Home: React.FC = () => (
   <div>
