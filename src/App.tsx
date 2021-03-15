@@ -9,7 +9,7 @@ const App: React.FC = () => (
     <Suspense fallback={<div>Loading...</div>}>
       <nav className='navBar'>
         <NavLink to="/" className="navItem">Home</NavLink>
-        <NavLink to="/about" className="navItem">About</NavLink>
+        {/* <NavLink to="/about" className="navItem">About</NavLink> */}
       </nav>
       <Switch>
         <Route path="/about">

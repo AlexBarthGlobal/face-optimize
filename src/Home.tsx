@@ -4,7 +4,7 @@ import FaceOptimize from './FaceOptimize'
 const Home: React.FC = () => (
   <div>
     <h1 className="welcomeText">Welcome to Face Optimize</h1>
-    <FaceOptimize />
+    {/* <FaceOptimize /> */}
   </div>
 );
 
